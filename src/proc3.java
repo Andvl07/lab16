@@ -4,8 +4,8 @@ public class proc3 {
 
     public static void Mean(double X, double Y, double[] result) {
         if (X <= 0 || Y <= 0) {
-            System.err.println("Error: Input values must be positive.");
-            result[0] = Double.NaN; // Set to NaN to indicate an error
+            System.err.println("Ошибка: вводимые числа должны быть положительными!");
+            result[0] = Double.NaN; //вывод ошибки на консоль
             result[1] = Double.NaN;
             return;
         }
@@ -38,7 +38,7 @@ public class proc3 {
         Mean(A, D, result);
         System.out.println("Среднее арифметическое (A, D): " + result[0]);
         System.out.println("Среднее геометрическое (A, D): " + result[1]);
-       
+       //вывод данных на консоль
     }
 }
 
